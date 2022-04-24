@@ -35,6 +35,9 @@ function generateMarkdown(data) {
     //use to create a template
   return `# ${data.title}
 
+  ## Licenses
+  ${renderLicenseBadge(data.license)}
+ 
   ## Table of Contents
 -[Description](#description)
 -[Installation](#nstallation)
@@ -44,7 +47,7 @@ function generateMarkdown(data) {
 -[Questions](#questions)
 
   ## Description
-${data.description}
+  ${data.description}
   ## Installation
   ${data.installation}
   ## Contributors
@@ -56,9 +59,13 @@ ${data.description}
   ##Questions
   ${data.github}
   ${data.email}
+ 
 
-  ## Licenses
-  ${renderLicenseBadge(data.license)}
+
+  ##Screenshots
+  ![Insert description here](Insert link to picture)
+  ![Insert description here](Insert link to picture)
+  
 `;
 
 
