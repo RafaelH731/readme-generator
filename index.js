@@ -17,13 +17,13 @@ const questions = [
     },
     {
         type: "input",
-        message: "Input Table of Contents here",
-        name: "name"
+        message: "How do you install your project?",
+        name: "install"
     },
     {
         type: "input",
         message: "What is the purpose of your project?",
-        name: "name"
+        name: "usage"
     },
     {
         type: "checkbox",
@@ -34,8 +34,13 @@ const questions = [
     },
     {
         type: "input",
-        message: "Add contributions here",
-        name: "name"
+        message: "Add GitHub username here",
+        name: "github"
+    },
+    {
+        type: "input",
+        message: "Add email address here",
+        name: "email"
     },
 ];
 
