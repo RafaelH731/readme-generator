@@ -7,12 +7,12 @@ const questions = [
     {
         type: "input",
         message: "What is the title of your project?",
-        name: "name"
+        name: "title"
     },
     {
         type: "input",
         message: "Input description of project here",
-        name: "name"
+        name: "description"
     },
     {
         type: "input",
@@ -27,7 +27,7 @@ const questions = [
     {
         type: "input",
         message: "Add lisence information here",
-        name: "name"
+        name: "license"
     },
     {
         type: "input",
@@ -40,10 +40,19 @@ const questions = [
 function writeToFile(fileName, data) {
     //get file name and template file
     //using fs to read and write file and create the readme.md
+    fs.writeFile(fileName,generateMarkDown(data),function(error){
+        if(error) console.error(error);
+    })
 }
 
 // TODO: Create a function to initialize app
 function init() {
+
+    inquirer.prompt(questions).then(function(response){
+        response.name
+
+        writeToFile('./README.md',generateMarkDown(response))
+    })
     //code goes in here, using the questions var I can use the questions in the inquirer to the user 
     //pass the answers into generateMarkDown.js
     //return the template string from generatemarkdown.js
