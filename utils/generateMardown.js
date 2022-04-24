@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
 
     switch(license){
         case "Apache":
-            return `string for apache badge`;
+            return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
         break;
         case "Boost":
             return `string for boost badge`
