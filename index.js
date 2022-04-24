@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const Choices = require("inquirer/lib/objects/choices");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -25,9 +26,11 @@ const questions = [
         name: "name"
     },
     {
-        type: "input",
-        message: "Add lisence information here",
-        name: "license"
+        type: "checkbox",
+        message: "Choose license listed below",
+        name: "license",
+        choices: ["Apache", "Boost", "Eclipse", "GNU"]
+        
     },
     {
         type: "input",
