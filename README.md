@@ -1,7 +1,7 @@
-# aaaa
+## readme generator
 
-  ## Licenses
-  No license was used in conjunction with this project
+  
+  
  
   ## Table of Contents
 -[Description](#description)
@@ -12,18 +12,23 @@
 -[Questions](#questions)
 
   ## Description
-  bbbb
+  makes readmes\
+
+  ## License
+        This license was used for this application
+  No license was used in conjunction with this project
+
   ## Installation
-  cccc
+  nmp install
   ## Contributors
-  undefined
+  none
   ## Usage
-  dddd
+  to get a good grade
   ## Tests
-  undefined
+  none added but can add jest
   ## Questions
-  eeee
-  ffff
+  here
+  also her
  
 
 

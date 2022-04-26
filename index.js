@@ -27,6 +27,16 @@ const questions = [
         name: "usage"
     },
     {
+        type: "input",
+        message: "What are the contribution guidelines?",
+        name: "contributors"
+    },
+    {
+        type: "input",
+        message: "What are the test instructions for this application?",
+        name: "tests"
+    },
+    {
         type: "checkbox",
         message: "Choose license listed below",
         name: "license",
