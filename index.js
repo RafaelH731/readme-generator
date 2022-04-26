@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const Choices = require("inquirer/lib/objects/choices");
-const generateMarkDown = require("./utils/generateMarkdown");
+//const Choices = require("inquirer/lib/objects/choices");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -30,7 +30,7 @@ const questions = [
         type: "checkbox",
         message: "Choose license listed below",
         name: "license",
-        choices: ["Apache", "Boost", "Eclipse", "GNU"]
+        choices: ["Apache", "Boost", "Eclipse", "GNU", "None of the above"]
         
     },
     {
@@ -49,7 +49,7 @@ const questions = [
 function writeToFile(fileName, data) {
     //get file name and template file
     //using fs to read and write file and create the readme.md
-    fs.writeFile(fileName,generateMarkDown(data),function(error){
+    fs.writeFile(fileName, data ,function(error){
         if(error) console.error(error);
     })
 }
@@ -60,7 +60,7 @@ function init() {
     inquirer.prompt(questions).then(function(response){
         response.name
 
-        writeToFile('./README.md',generateMarkDown(response))
+        writeToFile('./README.md',generateMarkdown(response))
     })
     //code goes in here, using the questions var I can use the questions in the inquirer to the user 
     //pass the answers into generateMarkDown.js
