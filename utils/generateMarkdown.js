@@ -85,12 +85,12 @@ function generateMarkdown(data) {
   
  
   ## Table of Contents
-- [Description](#description)
-- [Installation](#nstallation)
-- [Contributors](#contributors)
-- [Usage](#usage)
-- [Tests](#tests)
-- [Questions](#questions)
+  - [Description](#description)
+  - [Installation](#nstallation)
+  - [Contributors](#contributors)
+  - [Usage](#usage)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Description
   ${data.description}
@@ -108,8 +108,8 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   ## Questions
-  - ${data.github}
-  - ${data.email}
+  - GitHub: ${data.github}
+  - Email: ${data.email}
  
 
 
