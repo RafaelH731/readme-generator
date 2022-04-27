@@ -36,7 +36,7 @@
 
 
   ## Screenshots
-  - ![TerminalScreenshot](/readme-generator/images/readme-generator-terminal-screenshot.png)
+  - ![TerminalScreenshot](images/readme-generator-terminal-screenshot.png)
   Screenshot above is the the terminal after running index.js, it will ask all the questions I have listed and then it will print that data on the generateMarkdown.js file, after that file runs it will create the readme.md file to view all the data the user provided in designated parts of the readme.
   - https://www.youtube.com/watch?v=qwWb_CpfOV8
 
