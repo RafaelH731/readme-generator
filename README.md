@@ -1,4 +1,4 @@
-## readme generator
+## f f
 
   
   
@@ -12,23 +12,23 @@
 -[Questions](#questions)
 
   ## Description
-  makes readmes\
+  f
 
   ## License
         This license was used for this application
   No license was used in conjunction with this project
 
   ## Installation
-  nmp install
+  f
   ## Contributors
-  none
+  f
   ## Usage
-  to get a good grade
+  f
   ## Tests
-  none added but can add jest
+  f
   ## Questions
-  here
-  also her
+  f
+  f
  
 
 
