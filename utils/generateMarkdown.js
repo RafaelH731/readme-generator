@@ -2,7 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 
-
+    if(this.license == "true"){
+        return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+    } else {
+        return ""
+    }
     //couldnt get switch to work so decided to use an if statement 
     // switch(license){
     //     case "Apache":
@@ -26,7 +30,17 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-    
+    if (license == "Apache"){
+        return "https://opensource.org/licenses/Apache-2.0"
+    } else if (license == "Boost"){
+        return "https://www.boost.org/LICENSE_1_0.txt"
+    } else if (license == "Eclipse"){
+        return "https://opensource.org/licenses/EPL-1.0"
+    } else if (license == "GNU"){
+        return "https://www.gnu.org/licenses/gpl-3.0"
+    } else {
+        return ""
+    }
     //couldnt get switch to work so decided to use an if statement 
     // switch(license){
     //     case "Apache":
@@ -71,18 +85,19 @@ function generateMarkdown(data) {
   
  
   ## Table of Contents
--[Description](#description)
--[Installation](#nstallation)
--[Contributors](#contributors)
--[Usage](#usage)
--[Tests](#tests)
--[Questions](#questions)
+- [Description](#description)
+- [Installation](#nstallation)
+- [Contributors](#contributors)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Questions](#questions)
 
   ## Description
   ${data.description}
 
   ${renderLicenseSection(data.license)}
   ${renderLicenseBadge(data.license)}
+  [![license](https://img.shields.io/badge/license-${data.license}-blue.svg)](https://shields.io/)
 
   ## Installation
   ${data.install}
@@ -93,14 +108,14 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   ## Questions
-  ${data.github}
-  ${data.email}
+  - ${data.github}
+  - ${data.email}
  
 
 
   ## Screenshots
-  ![Insert description here](Insert link to picture)
-  ![Insert description here](Insert link to picture)
+  - ![Insert description here](Insert link to picture)
+  - ![Insert description here](Insert link to picture)
 
 `;
 
